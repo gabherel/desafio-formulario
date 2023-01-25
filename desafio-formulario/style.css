@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+body::before {
+  content: "";
+
+  background: #535971;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 436px;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 357px;
+
+  margin-top: 140px;
+}
+
+legend, h1, button {
+  font-family: 'Staatliches' ,sans-serif;
+}
+
+header h1 {
+  font-size: 48px;
+  line-height: 60px;
+ 
+  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+p, label, span {
+  font-family: 'Poppins', sans-serif;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+
+form {
+  min-height: 300px;
+
+  margin-top: 58px;
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset{
+  border: none;
+  margin-bottom: 30px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+fieldset legend {
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #535971;
+  
+  width: 100%;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper span {
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #C1BCCC;
+  margin-left: 10px;
+}
+
+.input-wrapper input {
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6C6A71;
+}
+
+.nomes .input-wrapper input {
+  width: 300px;
+  height: 56px;
+}
+
+.nomes, .col-3 {
+  display: flex;
+  gap: 22px;
+}
+
+fieldset .fieldset-wrapper #primeira-mentoria, #segunda-mentoria {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  /* identical to box height, or 170% */
+
+
+  color: #535971;
+
+  border: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+footer {
+  width: 750px;
+  height: 160px;
+
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+
+  margin-bottom: 100px;
+
+  padding: 52px 71px;
+}
+
+footer button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  border: 0;
+  
+  width: 608px;
+  height: 55.65px;
+  
+  background: #FF5374;
+  border-radius: 20px;
+
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+}
+
+input:invalid {
+  border: 1px solid #d80808;
+}
